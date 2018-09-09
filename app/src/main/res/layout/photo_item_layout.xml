@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="photo"
+            type="com.feevx.ravan.faceappsample.db.entity.PhotoEntity" />
+    </data>
+
+   <com.feevx.ravan.faceappsample.ui.widgets.SquareImageView
+       android:id="@+id/square_photo"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       app:picture="@{photo.thumbnail}"
+     />
+
+</layout>
